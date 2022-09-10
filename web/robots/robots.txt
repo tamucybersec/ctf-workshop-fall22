@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /room1.html
+Disallow: /room2.html
+Disallow: /room3.html
