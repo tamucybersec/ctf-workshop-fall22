@@ -1,5 +1,5 @@
 run:
 	docker build -t serialkiller .
-	docker run -d --restart=always --name tamuctf-serialkiller -p 2001:80 serialkiller
+	docker run -d --restart=always --name serialkiller -p 2008:80 serialkiller
 stop:
-	docker container rm -f tamuctf-serialkiller
+	docker container rm -f serialkiller

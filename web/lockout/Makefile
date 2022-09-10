@@ -1,5 +1,5 @@
 run:
 	docker build -t lockout .
-	docker run -d --restart=always --name tamuctf-lockout -p 2000:80 lockout
+	docker run -d --restart=always --name lockout -p 2009:80 lockout
 stop:
-	docker container rm -f tamuctf-lockout
+	docker container rm -f lockout
