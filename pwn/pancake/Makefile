@@ -18,8 +18,10 @@ run: docker
 
 
 extract: docker
-	$(eval id := $(shell docker create $(CONTAINER)))
-	docker cp $(id):/pwn/. - | tar xv
+	$(eval id := $(shell docker create $(NAME)))
+	docker cp $(id):/pwn/$(NAME) - | tar xv $(NAME)
 	docker rm -v $(id)
+
+
 
 .PHONY:
